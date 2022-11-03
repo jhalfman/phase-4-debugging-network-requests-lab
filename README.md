@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Checked network tab to see unitialized constant "Toys" instead of Toy; fixed in toys_controller
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: checked console error -> unexpected end of json; checked controller to make sure json was being sent to the client, but it was not.  Rendered json to be sent back
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: error was 404, meaning the route was not established.  added route to only list in routes.rb
